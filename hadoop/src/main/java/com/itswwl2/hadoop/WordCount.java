@@ -18,6 +18,13 @@ import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.TextInputFormat;
 import org.apache.hadoop.mapred.TextOutputFormat;
+/*
+ * 
+ * 这个例子读取项目路径下的文件
+ * 
+ * */
+
+
 /**
  * 
  * 描述：WordCount explains by Felix

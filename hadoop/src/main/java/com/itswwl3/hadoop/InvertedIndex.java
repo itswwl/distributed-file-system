@@ -95,7 +95,7 @@ public class InvertedIndex {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
         // 这句话很关键
-        conf.set("mapred.job.tracker", "192.168.1.2:9001");
+//        conf.set("mapred.job.tracker", "192.168.1.2:9001");
  
         String[] ioArgs = new String[] { "index_in", "index_out" };
         String[] otherArgs = new GenericOptionsParser(conf, ioArgs)

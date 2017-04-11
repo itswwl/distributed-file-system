@@ -13,6 +13,19 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
+
+
+/*
+ * 在Eclipse中运行第一个MapReduce程序
+ * http://sqcjy111.iteye.com/blog/1735203
+ * 
+ * eclipse新建DFS location设置
+ * http://blog.csdn.net/melody_1314/article/details/7619605
+ * 
+ * 这个例子，hadoop并没有使用远程的hadoop，而是读取本项目下的路径，应该配置读取路径为hadoop下的
+ * 
+ * */
+
 /**
  * @author Administrator
  *
@@ -46,8 +59,9 @@ public class Dedup {
 
 	public static void main(String[] args) throws Exception {
 		Configuration conf = new Configuration();
-		// 这句话很关键
-		conf.set("mapred.job.tracker", "192.168.1.2:9001");
+		// 这句话很关键  
+		//不清楚这个配置中ip和端口究竟指的是什么？注释掉掉也能运行
+//		conf.set("mapred.job.tracker", "192.168.1.2:9001");
 
 		String[] ioArgs = new String[] { "dedup_in", "dedup_out" };
 		String[] otherArgs = new GenericOptionsParser(conf, ioArgs).getRemainingArgs();
