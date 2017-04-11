@@ -105,7 +105,7 @@ public class WordCount
         conf.setOutputKeyClass(Text.class);    //为job的输出数据设置Key类
         conf.setOutputValueClass(IntWritable.class);   //为job输出设置value类
         conf.setMapperClass(Map.class);         //为job设置Mapper类
-        conf.setCombinerClass(Reduce.class);      //为job设置Combiner类
+//        conf.setCombinerClass(Reduce.class);      //为job设置Combiner类
         conf.setReducerClass(Reduce.class);        //为job设置Reduce类
         conf.setInputFormat(TextInputFormat.class);    //为map-reduce任务设置InputFormat实现类
         conf.setOutputFormat(TextOutputFormat.class);  //为map-reduce任务设置OutputFormat实现类

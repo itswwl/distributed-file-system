@@ -128,7 +128,7 @@ public class MTjoin {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
         // 这句话很关键
-//        conf.set("mapred.job.tracker", "192.168.1.2:9001");
+//        conf.set("mapred.job.tracker", "localhost:9001");
  
         String[] ioArgs = new String[] { "MTjoin_in", "MTjoin_out" };
         String[] otherArgs = new GenericOptionsParser(conf, ioArgs).getRemainingArgs();

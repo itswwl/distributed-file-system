@@ -61,7 +61,7 @@ public class Dedup {
 		Configuration conf = new Configuration();
 		// 这句话很关键  
 		//不清楚这个配置中ip和端口究竟指的是什么？注释掉掉也能运行
-//		conf.set("mapred.job.tracker", "192.168.1.2:9001");
+//		conf.set("mapred.job.tracker", "localhost:9001");
 
 		String[] ioArgs = new String[] { "dedup_in", "dedup_out" };
 		String[] otherArgs = new GenericOptionsParser(conf, ioArgs).getRemainingArgs();
