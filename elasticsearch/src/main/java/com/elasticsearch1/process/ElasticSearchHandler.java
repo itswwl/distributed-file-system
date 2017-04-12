@@ -1,6 +1,5 @@
 package com.elasticsearch1.process;
 
-import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
@@ -19,7 +18,24 @@ import org.elasticsearch.search.SearchHits;
 
 import com.elasticsearch1.model.DataFactory;
 import com.elasticsearch1.model.Medicine;
-
+/**
+ * Elasticsearch笔记
+ * https://my.oschina.net/jhao104/blog?search=Elasticsearch
+ * 
+ * 
+ * Elasticsearch
+ * http://www.cnblogs.com/wxw16/tag/Elasticsearch/
+ * 
+ * ElasticSearch搜索实例
+ * http://blog.csdn.net/liyantianmin/article/details/45134423
+ * 
+ * ElasticSearch
+ * http://www.cnblogs.com/paulwinflo/p/4469348.html
+ * http://www.cnblogs.com/paulwinflo/p/4469480.html
+ * http://www.cnblogs.com/paulwinflo/p/4503933.html
+ * 
+ * 
+ * */
 
 /*
  * 
@@ -27,6 +43,8 @@ import com.elasticsearch1.model.Medicine;
  * 
  *  为什么InetAddress类不能new初始化但可以定义对象：The constructor InetAddress() is not visible
  *  http://blog.csdn.net/pomelotea/article/details/37739673
+ *  
+ *  
  * */
 
 /**
