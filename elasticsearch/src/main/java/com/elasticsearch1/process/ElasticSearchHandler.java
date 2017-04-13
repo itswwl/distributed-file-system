@@ -18,6 +18,16 @@ import org.elasticsearch.search.SearchHits;
 
 import com.elasticsearch1.model.DataFactory;
 import com.elasticsearch1.model.Medicine;
+
+/*
+ * 
+ * 升级Kibana到3.0
+ * http://storysky.blog.51cto.com/628458/1336289/
+ * 
+ * elasticsearch升级后出现kibana 3 Could not contact Elasticsearch
+ * http://blog.csdn.net/fableboy/article/details/44775063
+ * 
+ * */
 /**
  * Elasticsearch笔记
  * https://my.oschina.net/jhao104/blog?search=Elasticsearch
